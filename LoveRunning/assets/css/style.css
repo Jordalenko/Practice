@@ -1,3 +1,7 @@
+/* Google font import - Lato light 300 font */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
+
 /* asterrisk selector to override default styling */
 
 * {
@@ -35,3 +39,9 @@ main {
 footer {
     background-color: rgb(77, 42, 194);
 }
+
+/* h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+      } */
