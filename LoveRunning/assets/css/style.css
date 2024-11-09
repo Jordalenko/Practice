@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     /* generic project styles */
     color: #3a3a3a;
-    font-family: "Lato", sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 /* header */
@@ -62,7 +62,11 @@ h1 {
 ul {
     font-style: none;
     font-family: "Oswald", sans-serif;
-    list-style-type: none;
-    letter-spacing: 2px;
+    
+}
+
+#menu {
     font-size: 110%;
+    letter-spacing: 2px;
+    list-style-type: none;
 }
