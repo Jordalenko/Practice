@@ -75,12 +75,6 @@ main {
     margin-top: 47px;
 }
 
-/* footer */
-
-footer {
-    background-color: rgb(77, 42, 194);
-}
-
 h1 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
@@ -115,15 +109,32 @@ main {
     flex: 1 0 auto;
 }
 
-/* Footer */
+/* footer */
+
 footer {
-    background-color: orange;
+    background-color: #ffffff;
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* Media query screens > 768px */
 
 @media screen and (min-width: 768px) {
+
     /* Header */
+
     nav {
         display:block;
         position: relative;
