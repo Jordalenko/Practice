@@ -41,7 +41,7 @@ header a {
 /* main content */
 
 main {
-    background-color: rgb(0, 255, 55);
+    background-color: rgb(141, 227, 160);
     /* make main window take up available space to push footer down */
     flex: 1 0 auto;
 }
@@ -69,4 +69,24 @@ ul {
     font-size: 110%;
     letter-spacing: 2px;
     list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Main content */
+main {
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: orange;
 }
