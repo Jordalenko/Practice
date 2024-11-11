@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-/* asterrisk selector to override default styling */
+/* asterisk selector to override default styling */
 
 * {
     padding: 0;
@@ -22,7 +22,7 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -73,6 +73,26 @@ nav {
     font-size: 2rem;
 }
 
+ul {
+    font-style: none;
+    font-family: "Oswald", sans-serif;
+    
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
 /* main content */
 
 main {
@@ -90,7 +110,7 @@ main {
 }
 
 #cover-text {
-    /* Final rgba value sets the opacity so its semi transparent */
+    /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
@@ -105,31 +125,32 @@ main {
     color:#ffffff
 }
 
-ul {
-    font-style: none;
-    font-family: "Oswald", sans-serif;
-    
+#benefits p {
+    padding: 0 20px;
 }
 
-#menu {
-    font-size: 110%;
-    letter-spacing: 2px;
-    list-style-type: none;
+/* Reasons section */
+
+#reasons {
+    margin: 20px auto;
+    width: 90%;
 }
 
-#menu > li {
-    margin-bottom: 1em;
+#reasons > h2 {
+    font-size: 280%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.active {
-    border-bottom: 1px solid #3a3a3a;
+#benefits-physical > div,
+#benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
 }
 
-/* Main content */
-main {
-    background-color: lightblue;
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
 }
 
 /* footer */
