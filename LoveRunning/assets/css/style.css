@@ -235,6 +235,23 @@ footer {
         width: 300px;
         right: 50px;
     }
+
+    /* style main section divs for larger screens */
+
+    #benefits-physical, #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical, #benefits-mental {
+        width: 75%;
+    }
+
+    #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 /* Media query screens > 992px */
@@ -247,3 +264,38 @@ footer {
         border-bottom: 1px solid #3a3a3a;
     }
 }
+
+/* Media query screens > 1020px */
+
+@media screen and (min-width: 1020px) {
+
+/* Center image between text elements */
+
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits > div {
+        flex: 1;
+    } 
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+}
+
+
+
