@@ -208,6 +208,22 @@ main {
     line-height: 0;
 }
 
+/* Signup Page */
+
+#sign-up-form {
+    width: 300px;
+    justify-content: center;
+}
+
+#running-preference {
+    display: flex;
+    flex-direction: column;
+    line-height: .25;
+    margin: 2px;
+}
+
+
+
 /* footer */
 
 footer {
