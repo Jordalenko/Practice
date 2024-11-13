@@ -210,18 +210,39 @@ main {
 
 /* Signup Page */
 
-#sign-up-form {
-    width: 300px;
-    justify-content: center;
+#signup {
+    background-size: cover;
+    background-image: url(../images/signup-image.webp);
+    background-position: 75%;
+    flex-grow: 1;
 }
 
-#running-preference {
+#signup-form > h2 {
+    color: #fafafa;
+}
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+}
+
+.text-input {
+    margin: 0 30px;
+}
+
+#radio-buttons {
     display: flex;
-    flex-direction: column;
-    line-height: .25;
-    margin: 2px;
+    justify-content: space-between;
+    width: 70%;
+    border: dotted;
 }
 
+#join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+}
 
 
 /* footer */
