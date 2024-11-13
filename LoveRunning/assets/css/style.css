@@ -78,7 +78,6 @@ nav {
 }
 
 ul {
-    font-style: none;
     font-family: "Oswald", sans-serif;
 }
 
@@ -389,8 +388,6 @@ footer {
         background-color: #fafafa;
         color: #454b1b;
     }
-}
-
 }
 
 /* Media query screens > 992px */
