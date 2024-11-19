@@ -169,25 +169,26 @@
                 <div class="col-12 col-md-10 col-lg-8 mb-4">
                     <!-- add your form here -->
                     <form class="row g-3">
-                        <div class="col-md-6">
-                          <label for="inputFullName" class="form-label">Full Name</label>
+                        <div class="col-md-4">
+                          <label for="inputFullName" class="form-label full-name">Full Name</label>
                           <input type="text" class="form-control" id="inputFullName">
                         </div>
-                        <div class="col-md-6">
-                          <label for="inputPhoneNumber" class="form-label">Phone Number</label>
+                        <div class="col-md-4">
+                          <label for="inputPhoneNumber" class="form-label phone-number">Phone Number</label>
                           <input type="number" class="form-control" id="inputPhoneNumber">
                         </div>
-                        <div class="col-12">
-                          <label for="inputEmail" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="inputEmail" placeholder="johndoe@gmail.com">
+                        <div class="col-md-4">
+                          <label for="inputEmail" class="form-label email-address">Email</label>
+                          <input type="email" class="form-control" id="inputEmail">
                         </div>
                         <div class="col-12">
-                          <label for="inputMessage" class="form-label">Message</label>
-                          <input type="text" class="form-control" style="height: 150px;" id="inputMessage" placeholder="Add comment here">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
                         </div>
-                        
                         <div class="col-12">
-                          <a href="" type="button" class="btn btn-primary">Send</button>
+                          <a href="" type="button" class="btn btn-primary send-button">Send</button>
                         </div>
                       </form> 
             </div>
