@@ -36,9 +36,9 @@
       </nav>
     
       <!-- header -->
-<header id="hero" class="container">
+    <header id="hero" class="container">
     <!-- section with hero image -->
-    <section class="row hero-image">
+    <section class="row">
         <!-- text-center class used to centre all text inside column -->
         <div class="col-12 text-center">
             <h1 class="display-4 my-4">Mei Wong</h1>
@@ -53,23 +53,17 @@
                     experiences.</strong>
                 Eager to collaborate and grow, I'm on the lookout for opportunities
                 to innovate and excel.
-            </p>
-            <!-- mb-5 gives extra margin spacing under lead text -->
-            <p class="lead mb-5">Let's create something amazing together!</p>
-        </div>
-
-  <!-- Modal Button -->
-
-<!-- Button trigger modal -->
-
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meiModal">
-    Subscribe to my newsletter!
-  </button>
-  
-
-    </section>
-</header>
-
+                </p>
+                <!-- mb-5 gives extra margin spacing under lead text -->
+                <p class="lead mb-5">Let's create something amazing together!</p>
+                <!-- Bootstrap modal button -->
+                <button type="button" class="btn btn-style sharp-corners" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Subscribe to my newsletter!
+                </button>
+            </div>
+        </section>
+    </header>
 <!-- main content -->
 <main>
     <!-- About section links to #about href in navbar -->
@@ -115,7 +109,7 @@
                 <h2 class="display-5">Portfolio</h2>
             </div>
             <div class="col-12 col-md-6">  
-            <div class="card mb-3">
+            <div class="card mb-3 sharp-corners">
                 <img src="assets/images/wags-and-walks.webp" class="card-img-top"
                     alt="A man walking several dogs early in the morning">
                 <div class="card-body">
@@ -128,7 +122,7 @@
             </div>
             </div>
             <div class="col-12 col-md-6">
-            <div class="card mb-3">
+            <div class="card mb-3 sharp-corners">
                 <img src="assets/images/wags-and-walks.webp" class="card-img-top"
                     alt="A man walking several dogs early in the morning">
                 <div class="card-body">
@@ -141,7 +135,7 @@
             </div>
             </div>
             <div class="col-12 col-md-6">
-            <div class="card mb-3">
+            <div class="card mb-3 sharp-corners">
                 <img src="assets/images/wags-and-walks.webp" class="card-img-top"
                     alt="A man walking several dogs early in the morning">
                 <div class="card-body">
@@ -154,7 +148,7 @@
             </div>
             </div>
             <div class="col-12 col-md-6">
-            <div class="card mb-3">
+            <div class="card mb-3 sharp-corners">
                 <img src="assets/images/wags-and-walks.webp" class="card-img-top"
                     alt="A man walking several dogs early in the morning">
                 <div class="card-body">
@@ -179,7 +173,7 @@
                 </div>
                 <div class="col-12 col-md-10 col-lg-8 mb-4">
                     <!-- add your form here -->
-                    <form class="row g-3">
+                    <form class="row g-3 sharp-corners">
                         <div class="col-lg-4">
                           <label for="full-name" class="form-label">Full Name</label>
                           <input type="text" class="form-control" id="full-name">
@@ -197,7 +191,7 @@
                                 <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
                         <div class="col-12">
-                          <button type="submit" class="btn btn-primary">Send</button>
+                          <button type="submit" class="btn btn-style">Send</button>
                         </div>
                       </form> 
             </div>
@@ -205,32 +199,38 @@
 
 <!-- Modal -->
 
-<div class="modal fade" id="meiModal" tabindex="-1" aria-labelledby="meiModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="meiModallLabel">Subscribe</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content sharp-corners">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Join my newsletter for the latest updates on my projects,
+                        coding tips, and industry insights delivered straight to your
+                        inbox.
+                    </p>
+                    <form class="row g-3">
+                        <div class="col-lg-6">
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputName">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="col-12 mb-4">
+                            <button type="submit" class="btn btn-style">
+                                Sign up!
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>Join my newsletter for the latest updates on my projects, coding tips and industry insights delivered straight to your inbox.</p>
-
-            <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="inputName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="inputName">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail">
-                </div>
-                <div col-12 mb-4>
-                    <button type="button" class="btn btn-primary">Sign Up!</button>
-                </div>
-        </div>
-      </div>
     </div>
-  </div>
   
 </main>
 

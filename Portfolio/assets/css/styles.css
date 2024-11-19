@@ -22,16 +22,55 @@ h2 {
     color: #184f63; dark-blue;
 }
 
+.sharp-corners,
+.sharp-corners * {
+    border-radius: 0;
+}
+
 #portfolio {
     background-color: #dbdcde; light grey;
+}
+
+#portfolio .card-title {
+    color: #1f7798; mid-blue;
+    font-size: 1.2rem;
+}
+
+#portfolio card-test {
+    min-height: 120px;
 }
 
 #contact {
     background-color: white;
 }
 
-.hero-image {
+#hero {
     background-image: url(../images/background.webp);
     min-height: 500px;
+    background-size: cover;
+    background-position: 50% 70%;
+    padding: 5% 7%;
+}
 
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798; mid-blue;
+}
+
+.btn-style {
+    background-color: #1f7798; mid-blue;
+    border: #1f7798;
+}
+
+.btn-style:hover {
+    background-color: #1d6d8a;
+    border: #1d6d8a;
+}
+
+/* media queries */
+
+@media screen and (min-width: 1200px;) {
+    /* fixes cards from being too tall on xl screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
